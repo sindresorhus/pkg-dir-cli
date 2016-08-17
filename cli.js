@@ -6,10 +6,7 @@ var pkgDir = require('pkg-dir');
 var cli = meow({
 	help: [
 		'Usage',
-		'  $ pkg-dir',
-		'',
-		'Options',
-		'  --cwd=<dir>  Working directory',
+		'  $ pkg-dir <cwd>',
 		'',
 		'Examples',
 		'  $ echo $PWD',

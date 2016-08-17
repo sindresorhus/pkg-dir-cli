@@ -16,10 +16,13 @@ $ npm install --global pkg-dir-cli
 $ pkg-dir --help
 
   Usage
-    $ pkg-dir
+    $ pkg-dir <cwd>
 
-  Options
-    --cwd=<dir>  Working directory
+  Examples
+    $ echo $PWD
+    /Users/sindresorhus/foo/bar
+    $ pkg-dir
+    /Users/sindresorhus/foo
 ```
 
 
