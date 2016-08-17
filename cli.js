@@ -1,22 +1,20 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var pkgDir = require('pkg-dir');
+const meow = require('meow');
+const pkgDir = require('pkg-dir');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ pkg-dir <cwd>',
-		'',
-		'Examples',
-		'  $ echo $PWD',
-		'  /Users/sindresorhus/foo/bar',
-		'  $ pkg-dir',
-		'  /Users/sindresorhus/foo'
-	]
-});
+const cli = meow(`
+	Usage
+	  $ pkg-dir <cwd>
 
-var filepath = pkgDir.sync(cli.input[0], cli.flags);
+	Examples
+	  $ echo $PWD
+	  /Users/sindresorhus/foo/bar
+	  $ pkg-dir
+	  /Users/sindresorhus/foo
+`);
+
+const filepath = pkgDir.sync(cli.input[0]);
 
 if (filepath) {
 	console.log(filepath);
