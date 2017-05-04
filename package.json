@@ -13,7 +13,7 @@
     "pkg-dir": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -38,7 +38,6 @@
     "file",
     "search",
     "match",
-    "package",
     "resolve",
     "parent",
     "parents",
@@ -50,12 +49,12 @@
     "path"
   ],
   "dependencies": {
-    "meow": "^3.3.0",
-    "pkg-dir": "^1.0.0"
+    "meow": "^3.7.0",
+    "pkg-dir": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "execa": "^0.4.0",
+    "execa": "^0.6.3",
     "xo": "*"
   }
 }

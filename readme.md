@@ -1,6 +1,6 @@
 # pkg-dir-cli [![Build Status](https://travis-ci.org/sindresorhus/pkg-dir-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/pkg-dir-cli)
 
-> Find the root directory of an npm package
+> Find the root directory of a Node.js project or npm package
 
 
 ## Install
