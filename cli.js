@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const pkgDir = require('pkg-dir');
+import process from 'node:process';
+import meow from 'meow';
+import {packageDirectorySync} from 'pkg-dir';
 
 const cli = meow(`
 	Usage
@@ -12,13 +12,14 @@ const cli = meow(`
 	  /Users/sindresorhus/foo/bar
 	  $ pkg-dir
 	  /Users/sindresorhus/foo
-`);
+`, {
+	importMeta: import.meta,
+});
 
-const filepath = pkgDir.sync(cli.input[0]);
+const filePath = packageDirectorySync({cwd: cli.input[0]});
 
-if (filepath) {
-	console.log(filepath);
-	process.exit();
+if (filePath) {
+	console.log(filePath);
 } else {
-	process.exit(1);
+	process.exitCode = 1;
 }

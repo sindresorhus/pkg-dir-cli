@@ -1,60 +1,61 @@
 {
-  "name": "pkg-dir-cli",
-  "version": "2.1.0",
-  "description": "Find the root directory of an npm package",
-  "license": "MIT",
-  "repository": "sindresorhus/pkg-dir-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "pkg-dir": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "package",
-    "json",
-    "root",
-    "npm",
-    "entry",
-    "find",
-    "up",
-    "find-up",
-    "findup",
-    "look-up",
-    "look",
-    "file",
-    "search",
-    "match",
-    "resolve",
-    "parent",
-    "parents",
-    "folder",
-    "directory",
-    "dir",
-    "walk",
-    "walking",
-    "path"
-  ],
-  "dependencies": {
-    "meow": "^3.7.0",
-    "pkg-dir": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.3",
-    "xo": "*"
-  }
+	"name": "pkg-dir-cli",
+	"version": "2.1.0",
+	"description": "Find the root directory of an npm package",
+	"license": "MIT",
+	"repository": "sindresorhus/pkg-dir-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"pkg-dir": "./cli.js"
+	},
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"package",
+		"json",
+		"root",
+		"npm",
+		"entry",
+		"find",
+		"up",
+		"find-up",
+		"findup",
+		"look-up",
+		"look",
+		"file",
+		"search",
+		"match",
+		"resolve",
+		"parent",
+		"parents",
+		"folder",
+		"directory",
+		"walk",
+		"walking",
+		"path"
+	],
+	"dependencies": {
+		"meow": "^10.1.1",
+		"pkg-dir": "^6.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"execa": "^5.1.1",
+		"xo": "^0.44.0"
+	}
 }
